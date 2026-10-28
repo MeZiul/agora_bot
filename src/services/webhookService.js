@@ -217,8 +217,38 @@ function interpretarComando(texto) {
             return "Comando desconhecido. Digite !ajuda para ver os comandos disponíveis.";
     }
 }
+async function processarEvento(evento) {
+    console.log("Processando evento:", evento);
+
+    // Só reage a mensagens criadas no Ágora.
+    if (evento.evento !== "message.created") return;
+
+    const texto = evento.dados?.text;
+
+    // Eventos cifrados ou sem texto não podem ser interpretados.
+    if (typeof texto !== "string") return;
+
+    // Só responde a comandos iniciados por "!".
+    if (!texto.trim().startsWith("!")) return;
+
+    const conversationId = evento.conversationId;
+
+    if (typeof conversationId !== "string" || conversationId.length === 0) {
+        throw new Error("Evento sem conversationId válido");
+    }
+
+    const resposta = interpretarComando(texto);
+
+    await enviarMensagem(conversationId, resposta);
+
+    console.log(`Resposta enviada para a conversa ${conversationId}`);
+}
 
 // Consulta as falhas que esgotaram as tentativas.
 export function listarFalhasEsgotadas() {
     return [...falhasEsgotadas];
+}
+
+export function listarEventos() {
+  return [...historicoEventos].reverse();
 }

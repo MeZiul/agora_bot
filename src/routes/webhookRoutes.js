@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { validarAssinatura } from "../utils/validarAssinatura.js";
-import { registrarEvento, adicionarNaFila } from "../services/webhookService.js";
+import { registrarEvento, adicionarNaFila, registrarNoHistorico } from "../services/webhookService.js";
 
 const router = Router();
 
@@ -40,6 +40,8 @@ router.post("/", (req, res) => {
     }
 
     console.log("Novo evento recebido:", evento);
+
+    registrarNoHistorico(evento);
 
     // O evento validado e registrado como novo.
     adicionarNaFila(evento);

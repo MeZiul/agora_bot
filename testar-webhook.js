@@ -8,11 +8,16 @@ if (!segredo) {
 }
 
 const corpo = JSON.stringify({
-    evento: "mensagem",
+    evento: "message.created",
+    conversationId: "conversa-teste-123",
     dados: {
-        id: "123",
-        texto: "!ajuda",
+        id: "mensagem-00",
+        senderId: "usuario-teste",
+        type: "text",
+        text: "!ajuda",
+        createdAt: new Date().toISOString(),
     },
+    enviadoEm: new Date().toISOString(),
 });
 
 const assinatura = createHmac("sha256", segredo)

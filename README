@@ -1,0 +1,11 @@
+## Prevenção de loops
+
+O receptor só interpreta eventos do tipo `message.created`
+cujo texto começa com `!`.
+
+Mensagens comuns e respostas do bot que não começam com `!`
+não geram novas respostas. Assim, o bot evita reagir
+às próprias mensagens de resposta e entrar em um ciclo.
+
+Eventos sem texto, como mensagens cifradas, não são
+interpretados como comandos.

@@ -1,1 +1,1 @@
-{"total":0,"falhas":[]}
+{"total":1,"falhas":[{"evento":{"evento":"message.created","conversationId":"conversa-teste-falhas","dados":{"id":"6715de38-5cee-4ab1-892b-bfa3dede66de","conversationId":"conversa-teste-falhas","text":"!ajuda","encrypted":false},"enviadoEm":"2026-11-09T23:42:29.169Z"},"tentativas":4,"erro":"fetch failed","data":"2026-11-09T23:42:36.396Z"}]}

@@ -1,0 +1,78 @@
+webhook-teste  | 
+webhook-teste  | > webhook-receptor@1.0.0 start
+webhook-teste  | > node server.js
+webhook-teste  | 
+webhook-teste  | Servidor iniciado na porta 3001
+webhook-teste  | Novo evento recebido: {
+webhook-teste  |   evento: 'message.created',
+webhook-teste  |   conversationId: 'conversa-teste-falhas',
+webhook-teste  |   dados: {
+webhook-teste  |     id: '6715de38-5cee-4ab1-892b-bfa3dede66de',
+webhook-teste  |     conversationId: 'conversa-teste-falhas',
+webhook-teste  |     text: '!ajuda',
+webhook-teste  |     encrypted: false
+webhook-teste  |   },
+webhook-teste  |   enviadoEm: '2026-11-09T23:42:29.169Z'
+webhook-teste  | }
+webhook-teste  | Processando evento: {
+webhook-teste  |   evento: 'message.created',
+webhook-teste  |   conversationId: 'conversa-teste-falhas',
+webhook-teste  |   dados: {
+webhook-teste  |     id: '6715de38-5cee-4ab1-892b-bfa3dede66de',
+webhook-teste  |     conversationId: 'conversa-teste-falhas',
+webhook-teste  |     text: '!ajuda',
+webhook-teste  |     encrypted: false
+webhook-teste  |   },
+webhook-teste  |   enviadoEm: '2026-11-09T23:42:29.169Z'
+webhook-teste  | }
+webhook-teste  | Falha na tentativa 1: fetch failed
+webhook-teste  | Nova tentativa em 1 segundo(s).
+webhook-teste  | Processando evento: {
+webhook-teste  |   evento: 'message.created',
+webhook-teste  |   conversationId: 'conversa-teste-falhas',
+webhook-teste  |   dados: {
+webhook-teste  |     id: '6715de38-5cee-4ab1-892b-bfa3dede66de',
+webhook-teste  |     conversationId: 'conversa-teste-falhas',
+webhook-teste  |     text: '!ajuda',
+webhook-teste  |     encrypted: false
+webhook-teste  |   },
+webhook-teste  |   enviadoEm: '2026-11-09T23:42:29.169Z'
+webhook-teste  | }
+webhook-teste  | Falha na tentativa 2: fetch failed
+webhook-teste  | Nova tentativa em 2 segundo(s).
+webhook-teste  | Processando evento: {
+webhook-teste  |   evento: 'message.created',
+webhook-teste  |   conversationId: 'conversa-teste-falhas',
+webhook-teste  |   dados: {
+webhook-teste  |     id: '6715de38-5cee-4ab1-892b-bfa3dede66de',
+webhook-teste  |     conversationId: 'conversa-teste-falhas',
+webhook-teste  |     text: '!ajuda',
+webhook-teste  |     encrypted: false
+webhook-teste  |   },
+webhook-teste  |   enviadoEm: '2026-11-09T23:42:29.169Z'
+webhook-teste  | }
+webhook-teste  | Falha na tentativa 3: fetch failed
+webhook-teste  | Nova tentativa em 4 segundo(s).
+webhook-teste  | Processando evento: {
+webhook-teste  |   evento: 'message.created',
+webhook-teste  |   conversationId: 'conversa-teste-falhas',
+webhook-teste  |   dados: {
+webhook-teste  |     id: '6715de38-5cee-4ab1-892b-bfa3dede66de',
+webhook-teste  |     conversationId: 'conversa-teste-falhas',
+webhook-teste  |     text: '!ajuda',
+webhook-teste  |     encrypted: false
+webhook-teste  |   },
+webhook-teste  |   enviadoEm: '2026-11-09T23:42:29.169Z'
+webhook-teste  | }
+webhook-teste  | Falha na tentativa 4: fetch failed
+webhook-teste  | Evento com tentativas esgotadas: {
+webhook-teste  |   evento: 'message.created',
+webhook-teste  |   conversationId: 'conversa-teste-falhas',
+webhook-teste  |   dados: {
+webhook-teste  |     id: '6715de38-5cee-4ab1-892b-bfa3dede66de',
+webhook-teste  |     conversationId: 'conversa-teste-falhas',
+webhook-teste  |     text: '!ajuda',
+webhook-teste  |     encrypted: false
+webhook-teste  |   },
+webhook-teste  |   enviadoEm: '2026-11-09T23:42:29.169Z'
+webhook-teste  | }

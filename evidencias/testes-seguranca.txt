@@ -1,0 +1,11 @@
+
+=== TESTES DE SEGURANÇA DO WEBHOOK ===
+
+PASSOU | Sem assinatura | esperado 401, recebido 401
+PASSOU | Assinatura incorreta | esperado 401, recebido 401
+PASSOU | JSON inválido, assinatura válida | esperado 400, recebido 400
+PASSOU | Evento novo válido | esperado 202, recebido 202
+PASSOU | Evento duplicado | esperado 200, recebido 200
+
+=== RESULTADO FINAL ===
+5/5 testes aprovados.

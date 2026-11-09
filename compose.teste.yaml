@@ -1,0 +1,12 @@
+services:
+  webhook-teste:
+    image: agora_bot-webhook-receptor:latest
+    container_name: webhook-teste
+    restart: "no"
+    environment:
+      PORT: "3001"
+      WEBHOOK_SECRET: "segredo-exclusivo-para-teste"
+      AGORA_URL: "http://127.0.0.1:3999"
+      AGORA_BOT_TOKEN: "token-ficticio-para-teste"
+    ports:
+      - "127.0.0.1:3001:3001"

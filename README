@@ -140,6 +140,7 @@ agora_bot/
 │   │   └── webhookService.js
 │   └── utils/
 │       └── validarAssinatura.js
+├── evidencias/
 ├── .dockerignore
 ├── .env.example
 ├── .gitignore
@@ -331,9 +332,23 @@ https://agora-bot-luiz.app.fslab.dev
 
 A comunicação pública utiliza HTTPS, enquanto o serviço Node.js recebe conexões HTTP internamente.
 
-## 11. Entrega
+## 11. Evidências
 
-O projeto deve ser compactado em ZIP contendo o código-fonte, o `README.md` e os arquivos de configuração de exemplo.
+A pasta `evidencias/` deve conter capturas que demonstrem:
+
+- Serviço funcionando pelo endpoint público `/saude`.
+- Configuração do webhook na Ágora, sem exposição de segredos.
+- Comando `!ajuda` e resposta do bot.
+- Comandos `!eventos` e `!contar`.
+- Tratamento de comando desconhecido.
+- Resultado dos testes automatizados de segurança.
+- Logs das quatro tentativas de envio.
+- Resposta do endpoint `/falhas` com uma falha registrada.
+- Contêiner principal em execução.
+
+## 12. Entrega
+
+O projeto deve ser compactado em ZIP contendo o código-fonte, o `README.md`, os arquivos de configuração de exemplo e as evidências.
 
 Não incluir:
 
